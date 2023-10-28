@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beez Beliz Rental</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    min-height:100vh;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  background: transparent;
+  z-index: 1000;
+  padding: 10px 60px;
+
+}
+header img {
+    width: 100px;
+}
+
+main {
+  position: relative;
+  display: flex;
+  padding: 0 60px;
+  padding-top: 12%; 
+  justify-content: space-between; 
+  background: linear-gradient(120deg,rgb(1, 95, 201) 80%,#9966CC) no-repeat;
+  height:100vh;
+}
+main img{
+  width:450px;
+}
+main svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+#heroSvg2{
+  display: none;
+}
+.left {
+    padding-right: 2.5em;
+    z-index:1;
+} 
+
+.right {
+    margin-top: 70px;
+    color: #fff;
+    z-index:1;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Poppins';
+    padding-bottom: 20px;
+}
+
+p {
+    line-height: 1.7;
+    opacity: .8;
+}
+
+button {
+    padding: 15px 60px;
+    margin-top: 30px;
+    border-radius: 5rem;
+    border: 0; 
+    cursor: pointer;
+    color: #674baf;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+
+button:hover {
+    color: #fff;
+    background: #dc52d7;
+    box-shadow: 0 0 10px #fff;
+}
+/*
+footer {
+    text-align: right;
+}
+
+.fab {
+    border: 2px solid #fff;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #fff;
+    transition: 0.3s all ease;
+    margin-bottom: 10px;
+}
+
+.fa-facebook-f {
+    padding: 10px 13px;
+}
+
+.fab:hover {
+    color: #674baf;
+    border-color: #fff;
+    background-color: #fff;
+    cursor: pointer; 
+}  
+*/
+@media screen and (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+        min-height: 100vh;
+        height: auto;
+        background: linear-gradient(120deg,rgb(1, 95, 201) 80%,#9966CC) no-repeat;
+    }
+    main svg{
+      display: none;
+    }
+    #heroSvg2{
+      display: block;
+    }
+    .left img {
+        width: 80%;
+    }
+
+    .right {
+        padding-top: 40px;
+        text-align: center;
+        order:1;
+        margin: 20px 0;
+        margin-bottom:40px;
+    }
+    .left{
+      display: flex;
+      justify-content: center;
+      order:2;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    button {
+        padding: 15px 90px;
+    }
+
+   /* footer {
+        text-align: center;
+        padding-top: 80px;
+    }*/
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> 
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="logo">
+  </header>
+  <main>
+    <svg viewBox="0 0 1318 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><defs><linearGradient x1="-45.25%" y1="-88.077%" x2="97.789%" y2="100%" id="a"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#F952C5" offset="4.09%"/><stop stop-color="#9952FF" stop-opacity="0" offset="100%"/></linearGradient><linearGradient x1="-64.06%" y1="-121.906%" x2="97.789%" y2="100%" id="b"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#F952C5" offset="4.09%"/><stop stop-color="#9952FF" stop-opacity="0" offset="100%"/></linearGradient><linearGradient x1="100%" y1="111.373%" x2="-24.893%" y2="-55.159%" id="c"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient><linearGradient x1="21.681%" y1="5.006%" x2="145.861%" y2="145.591%" id="d"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient><linearGradient x1="6.375%" y1="-15.195%" x2="91.754%" y2="105.701%" id="e"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" transform="matrix(-1 0 0 1 834.817 0)" d="M0 0h409.224l425.593 376v156.83z"/><path fill="url(#b)" transform="rotate(180 528.65 584)" d="M0 367l641.153.138L1057.3 673.299V801z"/><circle stroke="url(#c)" stroke-width="17" cx="704" cy="563" r="49"/><rect fill="url(#d)" opacity=".558" transform="rotate(45 1107.87 708.87)" x="1088.87" y="689.87" width="38" height="38" rx="3"/><rect fill="url(#d)" opacity=".503" transform="rotate(45 1279.598 103.598)" x="1251.598" y="75.598" width="56" height="56" rx="3"/><rect fill="url(#d)" opacity=".558" transform="rotate(45 934.627 63.627)" x="918.627" y="47.627" width="32" height="32" rx="3"/><rect fill="url(#d)" opacity=".558" transform="rotate(45 703.627 186.627)" x="687.627" y="170.627" width="32" height="32" rx="3"/><rect fill="url(#d)" opacity=".387" transform="rotate(45 1237.02 606.02)" x="1228.521" y="597.521" width="17" height="17" rx="1"/><path d="M91.477 739.477v-16.5a5 5 0 0 1 10 0v16.5h16.5a5 5 0 0 1 0 10h-16.5v16.5a5 5 0 1 1-10 0v-16.5h-16.5a5 5 0 1 1 0-10h16.5z" fill="url(#e)" opacity=".211" transform="rotate(45 96.477 744.477)"/></g></svg>
+    <svg viewBox="400 0 1200 1800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" id="heroSvg2"><defs><linearGradient x1="-45.25%" y1="-88.077%" x2="97.789%" y2="100%" id="a1"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#F952C5" offset="4.09%"/><stop stop-color="#9952FF" stop-opacity="0" offset="100%"/></linearGradient><linearGradient x1="-64.06%" y1="-121.906%" x2="97.789%" y2="100%" id="b1"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#F952C5" offset="4.09%"/><stop stop-color="#9952FF" stop-opacity="0" offset="100%"/></linearGradient><linearGradient x1="100%" y1="111.373%" x2="-24.893%" y2="-55.159%" id="c1"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient><linearGradient x1="21.681%" y1="5.006%" x2="145.861%" y2="145.591%" id="d1"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient><linearGradient x1="6.375%" y1="-15.195%" x2="91.754%" y2="105.701%" id="e1"><stop stop-color="#FF52C1" offset="0%"/><stop stop-color="#9952FF" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle stroke="url(#c1)" stroke-width="17" cx="704" cy="563" r="49"/><rect fill="url(#d1)" opacity=".558" transform="rotate(45 1107.87 708.87)" x="1088.87" y="689.87" width="38" height="38" rx="3"/><rect fill="url(#d1)" opacity=".503" transform="rotate(45 1279.598 103.598)" x="1251.598" y="75.598" width="56" height="56" rx="3"/><rect fill="url(#d1)" opacity=".558" transform="rotate(45 934.627 63.627)" x="918.627" y="47.627" width="32" height="32" rx="3"/><rect fill="url(#d1)" opacity=".558" transform="rotate(45 703.627 186.627)" x="687.627" y="170.627" width="32" height="32" rx="3"/><rect fill="url(#d1)" opacity=".387" transform="rotate(45 1237.02 606.02)" x="1228.521" y="597.521" width="17" height="17" rx="1"/>
+      <circle stroke="url(#c1)" stroke-width="17" cx="1500" cy="1563" r="49"/><rect fill="url(#d1)" opacity=".558" transform="rotate(45 1107.87 708.87)" x="988.87" y="1289.87" width="38" height="38" rx="3"/><rect fill="url(#d1)" opacity=".503" transform="rotate(45 1279.598 103.598)" x="1251.598" y="1105.598" width="56" height="56" rx="3"/><rect fill="url(#d1)" opacity=".387" transform="rotate(45 1237.02 606.02)" x="1228.521" y="1397.521" width="17" height="17" rx="1"/><rect fill="url(#d1)" opacity=".503" transform="rotate(45 1279.598 103.598)" x="2451.598" y="1105.598" width="56" height="56" rx="3"/><rect fill="url(#d1)" opacity=".503" transform="rotate(45 1279.598 103.598)" x="2051.598" y="700.598" width="56" height="56" rx="3"/></g></svg>
+    <section class="left">
+      <img src="golf_cart.png" alt="Golf Cart">
+    </section>
+    <section class="right">
+      <h1>The Best golf cart rental Begins Here</h1>
+      <p>Take advantage of our special rates and free service</p>
+      <button>Contact Us</button> 
+    </section>
+  </main>
+  <!--footer>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i> 
+    <i class="fab fa-instagram"></i> 
+  </footer-->
+</body>
+</html>
